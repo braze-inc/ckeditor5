@@ -30,6 +30,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js';
 import Style from '@ckeditor/ckeditor5-style/src/style.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
+import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
 
 class Editor extends ClassicEditor {}
 
@@ -78,6 +79,8 @@ Editor.defaultConfig = {
 	},
 	toolbar: {
 		items: [
+			"sourceEditing",
+          	"|",
 			'link',
 			'imageUpload',
 			'|',
