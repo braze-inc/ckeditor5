@@ -60,6 +60,7 @@ Editor.builtinPlugins = [
 	Link,
 	Paragraph,
 	RemoveFormat,
+	SourceEditing,
 	Style,
 	Underline,
 	FullPage,
