@@ -31,6 +31,7 @@ import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat.js'
 import Style from '@ckeditor/ckeditor5-style/src/style.js';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
+import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
 
 class Editor extends ClassicEditor {}
 
@@ -42,6 +43,7 @@ Editor.builtinPlugins = [
 	AutoLink,
 	Bold,
 	Essentials,
+	FindAndReplace,
 	FontBackgroundColor,
 	FontColor,
 	FontFamily,
@@ -82,6 +84,8 @@ Editor.defaultConfig = {
 		items: [
 			"sourceEditing",
           	"|",
+			"findAndReplace",
+			"|",
 			'link',
 			'imageUpload',
 			'|',
